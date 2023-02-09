@@ -139,6 +139,7 @@ foreach ($T in $TierLevel){
         Write-Host "Password is saved in clipboard, document it and press any key to continue..." -ForegroundColor Yellow
         $KeyInfo = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
         Set-Clipboard -Value $null
+        Write-Host "Clipboard is cleared..." -ForegroundColor Yellow
     } else{
         Write-Host "Set new password on $username..." -ForegroundColor Yellow
         Write-Host "TIP: If you runt script in powershell console, password is saved temporay in clipboard." -ForegroundColor Yellow
